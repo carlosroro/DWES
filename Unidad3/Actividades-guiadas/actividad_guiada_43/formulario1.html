@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad guiada página 43</title>
+</head>
+<body>
+    <form action="./procesar_formulario1.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos">
+        <br><br>
+
+        <label for="genero">Género:</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">Masculino
+        <input type="radio" name="genero" id="femenino" value="femenino">Femenino
+        <br><br>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <label>Carnet:</label>
+        <input type="checkbox" name="carnet[]" id="b" value="B">B
+        <input type="checkbox" name="carnet[]" id="c" value="C">C
+        <br><br>
+
+        <label for="lenguajes">Lenguajes:</label>
+        <select name="lenguajes[]" id="lenguajes">
+            <option value="php">PHP</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python" selected>Python</option>
+            <option value="sql">SQL</option>
+        </select>
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
